@@ -1,0 +1,38 @@
+#gallery-nav-link{
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.gallery img {
+  width: 100%;
+}
+
+.gallery {
+  display: flex;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 25%;
+  padding: 5px;
+}
+
+.column img {
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.column img:active {
+  height: auto;
+  width: auto;
+  max-width: 80%;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  border: 10px solid #fff;
+  margin: 0px;
+  box-shadow: 0 0 1000px 1000px #fff8;
+  transform: translateX(-50%) translateY(-50%);
+}
+

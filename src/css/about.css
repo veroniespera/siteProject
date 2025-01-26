@@ -1,0 +1,35 @@
+#about-nav-link{
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.about-banner {
+  background-image: url(../images/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Montserrat", sans-serif;
+  color: aliceblue;
+  text-align: center;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.about-banner h1 {
+  font-size: 46px;
+  margin-bottom: 6px;
+}
+.about-banner p {
+  margin: 0px 48px;
+}
+.banner-text {
+  padding: 180px;
+}
+
+.about-info {
+  display: flex;
+  gap: 20px;
+  color: #0b505e;
+}
+.about-info img {
+  height: 320px;
+}

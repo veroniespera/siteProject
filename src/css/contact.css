@@ -1,0 +1,45 @@
+#contact-nav-link {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+/*FORM*/
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #0b505e;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #0b505e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 2px solid;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+input[type="submit"]:hover {
+  background-color: aliceblue;
+  color: #0b505e;
+  transition: 0.5s;
+}
+.form-section h1 {
+  text-align: center;
+}
+.form-section {
+  max-width: 600px;
+  margin: auto;
+  padding: 16px;
+  box-sizing: border-box;
+}
