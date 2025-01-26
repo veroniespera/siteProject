@@ -1,3 +1,3 @@
 # siteProject
 
-[about](./src/pages/about.html)
+[home](./src/pages/home.html)
