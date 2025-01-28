@@ -4,7 +4,7 @@
 }
 
 /*FORM*/
-input[type="text"],
+form input[type="text"],
 select,
 textarea {
   width: 100%;
@@ -17,7 +17,7 @@ textarea {
   resize: vertical;
 }
 
-input[type="submit"] {
+form input[type="submit"] {
   background-color: #0b505e;
   color: white;
   border: none;

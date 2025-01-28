@@ -20,6 +20,7 @@ section {
 .home-text {
   flex: 1 1 16rem;
   padding: 10px;
+  z-index: 9;
 }
 .home-text span {
   font-size: 1rem;
@@ -66,6 +67,7 @@ nav {
   padding: 0 5%;
   height: 100px;
   background-color: #0b505e;
+  z-index: 10;
 }
 nav .logo {
   float: left;
@@ -106,6 +108,14 @@ nav .links a {
   text-decoration: none;
 }
 
+
+nav .search-input {
+  width: 180px;
+  padding: 5px;
+  border: 1px solid #778784;
+  border-radius: 5px;
+  font-size: 16px;
+}
 /*CARD LIST*/
 
 .card-list {
