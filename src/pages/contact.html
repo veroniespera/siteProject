@@ -41,15 +41,25 @@
     <section class="form-section">
       <h1>Happy to hear from you!</h1>
       <form action="#">
-        <label for="name">Name</label>
-        <input type="text" name="name" placeholder="Your name" />
-        <label for="reason-for-contact">Reason for contact</label>
-        <select name="reason-for-contact" id="reason-for-contact">
-          <option value="tours">Tours</option>
-          <option value="partnership">Partnership</option>
-          <option value="lorem">Lorem</option>
-          <option value="complain">Complain</option>
-        </select>
+        <div class="form-rows">
+          <div class="form-row1">
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" placeholder="Your first name" />
+            <label for="email">Email</label>
+            <input type="text" name="email" placeholder="Your email" />
+          </div>
+          <div class="form-row2">
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" placeholder="Your last name" />
+            <label for="reason-for-contact">Reason for contact</label>
+            <select name="reason-for-contact" id="reason-for-contact">
+              <option value="tours">Tours</option>
+              <option value="partnership">Partnership</option>
+              <option value="lorem">Lorem</option>
+              <option value="complain">Complain</option>
+            </select>
+          </div>
+        </div>
         <label for="subject">Subject</label>
         <textarea
           name="subject"

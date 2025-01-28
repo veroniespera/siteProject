@@ -2,7 +2,16 @@
   text-decoration: underline;
   text-underline-offset: 5px;
 }
-
+body {
+  background-image: url(../images/tiles-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
 /*FORM*/
 form input[type="text"],
 select,
@@ -38,8 +47,28 @@ input[type="submit"]:hover {
   text-align: center;
 }
 .form-section {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  color: #0b505e;
+  text-align: center;
+  background-color: rgb(244, 246, 248);
   max-width: 600px;
-  margin: auto;
-  padding: 16px;
+  padding: 22px;
   box-sizing: border-box;
+  border-style: double;
+
+  border-width: 5px;
+  border-radius: 10px;
+  margin: 5px;
+  display: block;
+  margin: 120px;
+}
+.form-rows {
+  display: flex;
+  gap: 12px;
+}
+form label {
+  text-align: left;
+  display: block;
+  margin-right: 150px;
 }
