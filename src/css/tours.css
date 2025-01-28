@@ -1,0 +1,233 @@
+#tours-nav-link {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+body {
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+.project {
+  color: aliceblue;
+  text-align: center;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  z-index: 0;
+}
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: 20px 0;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.slideshow-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+}
+.slideshow-container .text {
+  font-weight: bold;
+  font-size: larger;
+  color: azure;
+  background-color: rgba(0, 58, 59, 0.3);
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #032f38;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.header {
+  background-color: #032f38;
+  width: 100%;
+  height: 20rem;
+}
+
+.header h1 {
+  color: white;
+  font-size: 1.5rem;
+  line-height: 15rem;
+  text-align: center;
+}
+
+.CardContainer {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: -6rem;
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center the cards horizontally */
+  gap: 2rem; /* Add spacing between cards */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.Card {
+  width: 20%; /* Fixed width for consistency */
+  max-width: 300px; /* Ensure a max width for smaller screens */
+  height: auto; /* Allow height to adjust based on content */
+  padding: 1rem;
+  background-color: rgb(250, 250, 250);
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex; /* Use flexbox for better alignment inside the card */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: space-between; /* Add equal spacing between elements */
+  text-align: center; /* Center-align text */
+  color: #0b505e;
+  transition: 0.3s ease-in-out;
+}
+.Card:hover {
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
+  background-color: #0b505e;
+  color: aliceblue;
+  transition: 0.5 ease-in-out;
+}
+.Card h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+
+.cardimgcontainer {
+  width: 100%; /* Ensure image container takes full width */
+  display: flex; /* Flexbox for image alignment */
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  margin: 1rem 0;
+}
+
+.Card img {
+  width: 80%;
+  height: auto; /* Maintain aspect ratio */
+  max-height: 180px; /* Set a maximum height */
+}
+
+.Card .Price {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.Card .Price .bold {
+  font-weight: 800;
+  font-size: 1.4rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .CardContainer {
+    flex-direction: column; /* Stack cards vertically */
+    gap: 1.5rem; /* Reduce spacing for smaller screens */
+  }
+
+  .Card {
+    width: 100%; /* Full width for mobile */
+    max-width: none; /* Remove max width constraint */
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .slideshow-container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 958px) {
+  .Card {
+    width: 90%;
+    height: 20rem;
+    margin-bottom: 20px;
+  }
+}

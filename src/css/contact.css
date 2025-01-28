@@ -72,3 +72,136 @@ form label {
   display: block;
   margin-right: 150px;
 }
+/* General Layout for Desktop */
+@media (max-width: 1200px) {
+  /* Adjust Form Section */
+  .form-section {
+    padding: 20px;
+  }
+
+  .form-section h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .form-rows {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .form-row1,
+  .form-row2 {
+    flex: 1 1 48%; /* Two columns side by side */
+  }
+}
+
+/* Tablet and Medium Devices */
+@media (max-width: 768px) {
+  /* Navigation Links */
+  nav .links {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .search {
+    width: 100%;
+  }
+
+  /* Form Section Adjustments */
+  .form-section h1 {
+    font-size: 24px;
+  }
+
+  .form-rows {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-row1,
+  .form-row2 {
+    flex: 1 1 100%; /* Full width */
+  }
+
+  textarea {
+    height: 150px;
+  }
+
+  input[type="submit"] {
+    width: 100%; /* Make the button full-width */
+    font-size: 16px;
+  }
+
+  /* Footer Adjustments */
+  footer .top_header {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  footer .bottom_content section {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  footer .copyright {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+  /* Body Text and Font Sizes */
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  /* Form Adjustments */
+  .form-section {
+    padding: 10px;
+  }
+
+  .form-rows {
+    gap: 10px;
+  }
+
+  textarea {
+    height: 120px;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  /* Footer Adjustments */
+  footer .top_header {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+  }
+
+  footer .bottom_content section {
+    gap: 15px;
+  }
+}

@@ -64,3 +64,136 @@
 .gallery-info h4 {
   margin: 0px;
 }
+
+/* For devices smaller than 1200px (Laptops and Tablets) */
+@media (max-width: 1200px) {
+  /* Gallery Banner Adjustments */
+  .gallery-banner .gallery-banner-text {
+    text-align: center;
+    padding: 30px;
+  }
+
+  .gallery-banner .gallery-banner-text h1 {
+    font-size: 28px;
+  }
+
+  .gallery-banner .gallery-banner-text p {
+    font-size: 16px;
+  }
+
+  /* Gallery Cards */
+  .gallery .column {
+    flex-basis: 50%; /* Two columns */
+  }
+
+  .gallery-card {
+    margin: 10px;
+  }
+}
+
+/* For devices smaller than 768px (Tablets and Medium Devices) */
+@media (max-width: 768px) {
+  /* Navigation */
+  nav .links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .search {
+    width: 100%;
+  }
+
+  /* Gallery Columns */
+  .gallery .column {
+    flex-basis: 100%; /* Single column */
+  }
+
+  .gallery-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .gallery-card .gallery-info {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  /* Footer */
+  footer .top_header {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  footer .bottom_content section {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  footer .copyright {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+/* For devices smaller than 480px (Mobile Devices) */
+@media (max-width: 480px) {
+  /* Body Text */
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  /* Navigation */
+  nav {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .logo {
+    margin-bottom: 20px;
+  }
+
+  /* Gallery Cards */
+  .gallery .column {
+    flex-basis: 100%; /* Stacked single-column layout */
+  }
+
+  .gallery-card {
+    margin: 10px 0;
+  }
+
+  .gallery-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .gallery-card .gallery-info {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  /* Footer */
+  footer .top_header {
+    text-align: center;
+    gap: 20px;
+  }
+
+  footer .bottom_content section {
+    gap: 15px;
+  }
+}
