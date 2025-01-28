@@ -1,5 +1,7 @@
 body {
   background-color: azure;
+  min-height: 100vh;
+  margin: 0;
 }
 section {
   padding: 40px 10%;
@@ -108,7 +110,6 @@ nav .links a {
   text-decoration: none;
 }
 
-
 nav .search-input {
   width: 180px;
   padding: 5px;
@@ -178,7 +179,7 @@ footer {
   margin-top: 20px;
 }
 
-a {
+nav a {
   text-decoration: none;
   outline: none !important;
   color: #fff;

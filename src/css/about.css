@@ -1,4 +1,4 @@
-#about-nav-link{
+#about-nav-link {
   text-decoration: underline;
   text-underline-offset: 5px;
 }
@@ -24,12 +24,31 @@
 .banner-text {
   padding: 180px;
 }
-
+.about-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
 .about-info {
+  background-color: #032f38;
   display: flex;
   gap: 20px;
-  color: #0b505e;
+  color: aliceblue;
+  border-radius: 10px;
+  padding: 50px 20px;
+}
+.about-info h3 {
+  font-family: "Montserrat", sans-serif;
+}
+.about-info p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
 }
 .about-info img {
   height: 320px;
+  border-radius: 10px;
+  transition: transform 1s ease-in-out;
+}
+.about-info img:hover{
+  transform: scale(1.05);
 }
